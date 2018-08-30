@@ -1,0 +1,383 @@
+
+
+/**************** PARTIE LAPTOP ***************************/
+
+/**************** Barre de navigation ********************/
+header {
+  height: 100px;
+  margin-top: 20px;
+  }
+
+#navbarNavAltMarkup{
+  justify-content: center;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  background: rgba(216, 215, 212, 0.2);
+  text-transform: uppercase;
+  margin-left: 5px;
+  color: #5A4A4A;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+  background: #5A4A4A;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 5px;
+
+}
+
+.logo {
+  float: left;
+  position: absolute;
+}
+
+
+.nav-pills .nav-link  {
+   color: #5A4A4A;
+   text-transform: uppercase;
+   margin-left: 5px;
+   background-image: red;
+}
+
+.nav-pills .nav-link.active, .nav-pills .nav-link active {
+  background: #5A4A4A;
+  color: white;
+}
+
+/*********************PAGE MESURE **********************/
+
+/****1 : Definition du fond d'écran ****/
+#home-page {
+  height: 900px;
+  width: 700px;
+  margin: auto;
+  background-image: url('../images/background.png');
+}
+
+/****2 : Définition des différents container + ombres ****/
+.container {
+  background: white;
+box-shadow: -1px 2px 5px 2px rgba(0, 0, 0, 0.2),
+            -1px 2px 20px rgba(255, 255, 255, 0.8) inset;
+            color: #5A4A4A;
+
+}
+
+/****3: Je place les images de chaque article ****/
+.article1 {
+  height: 30em;
+  width: 42%;
+  display: inline-block;
+  background-image: url('../images/src/photo1.jpg');
+  margin: 0px 0px -9px -15px  /* pour cacher la marge en bas de la photo */
+}
+.article2 {
+  height: 28em;
+  width: 42%;
+  display: inline-block;
+  background-image: url('../images/src/photo2.jpg');
+  margin: 0px 0px -7px -15px  /* pour cacher la marge en bas de la photo */
+}
+
+.article3 {
+  height: 30em;
+  width: 42%;
+  display: inline-block;
+  background-image: url('../images/src/photo3.jpg');
+  margin: 0px 0px -7px -15px  /* pour cacher la marge en bas de la photo */
+}
+
+.article4 {
+  height: 30em;
+  width: 42%;
+  display: inline-block;
+  background-image: url('../images/src/photo4.jpg');
+  margin: 0px 0px -7px -15px  /* pour cacher la marge en bas de la photo */
+}
+
+/****4: je fais la partie de droite ****/
+.content {
+  float: right;
+  display: line;
+  width: 58%;
+}
+
+.content-title {
+  padding: 3em 2em 1em;
+  text-transform: uppercase;
+}
+
+.content-title h1 {
+line-height:0.9em;
+font-weight: bold;
+font-size: 1.3em;
+margin-bottom: -20px;
+}
+
+.posts {
+  padding: 2em 2em 1em;
+  font-size: 0.9em
+}
+/****5: je place les dates ****/
+.meta-date {
+  float: right;
+  padding: 1em 1em;
+}
+
+/****6 : je place mes boutons catégories + lien réseaux sociaux ****/
+.buttonn {
+    padding: 3em 2em 1em;
+    margin-top: 15px;
+}
+
+.buttonn .special {
+  background-color: #dbdce0;
+  color: #5a4a4a;
+  border: none;
+  border-radius: 5px;
+
+}
+img {
+  background-color: #bebebe;
+  border-radius:50px;
+  width: 25px;
+  float: right;
+}
+
+.buttonn1 {
+  margin-top: -20px;
+}
+
+.special1 {
+  background-color: #dbdce0;
+  color: #5a4a4a;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: -50px;
+
+}
+
+/****7: je place mes petits triangles en dessous des articles ****/
+.triangle-rose {
+  background-image: url('../images/pink-triangle.png');
+  height: 0.6em;
+  margin-bottom: 60px;
+}
+.triangle-bleu {
+  background-image: url('../images/blue-triangle.png');
+  height: 0.6em;
+  margin-bottom: 60px;
+}
+
+/****7 : je place mes bouttons de navigation en dessous ****/
+.button {
+  text-align: center;
+  padding-left: 10px;
+}
+
+.button .premier {
+  background: #5a4a4a;
+  border: none;
+  font-style: bold;
+  color: white;
+  height: 2em;
+
+}
+.button .deuxieme {
+  background: #b18481;
+  border: none;
+  font-style: bold;
+  color: white;
+  height: 2em;
+}
+
+.bordure {
+  border-bottom: 1px solid #5a4a4a;;
+  margin-top: 40px;
+}
+
+/****8 : je fais le footer ****/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7em;
+  color:#5a4a4a;
+}
+
+.partie-droite nav ul li{
+  display: inline-block;
+  float: right;
+  font-weight: 0.3em;
+  margin-left: 1.4em;
+  color:#5a4a4a;
+}
+
+.partie-droite nav ul {
+  margin-bottom: 0em;
+}
+
+
+/**************** medias queries *****************/
+
+/***** je cache les éléments ****/
+@media only screen and (min-width:700px) and (max-width:2800px) {
+  .container-mobile {
+    display: none;
+  }
+  .button-mobile {
+    display: none;
+  }
+  .bordure-mobile {
+    display: none;
+  }
+  .footer-mobile {
+    display: none;
+  }
+  .partie-droite-mobile{
+display: none;
+  }
+
+}
+
+/****************VERSION MOBILE ****************************/
+@media only screen and (max-width:700px) {
+
+ #home-page {
+  background:#FFAEFA;
+  color:white
+}
+.container-mobile {
+  background: #E8D2FF;
+  box-shadow: -1px 2px 5px 2px rgba(0, 0, 0, 0.2),
+             -1px 2px 20px rgba(255, 255, 255, 0.8) inset;
+             color:#5A4A4A ;
+  height: 430px;
+  width: 710px;
+  margin-top: 50px;
+}
+
+.container {
+  display: none;
+}
+.triangle-rose {
+  display:none;
+}
+.triangle-bleu {
+  display:none;
+}
+.button {
+  display: none;
+}
+.bordure
+{
+  display: none;
+}
+.footer {
+  display: none;
+}
+
+/**** pareil je refais les mêmes étapes ***************/
+.article-mobile1 {
+  height: 15em;
+  width: 42%;
+  display: inline-block;
+  border-radius: 5px;
+  background-image: url('../images/src/photo1.jpg');
+  margin: 0px 0px -7px -15px  /* pour cacher la marge en bas de la photo */
+}
+
+.article-mobile2 {
+  height: 15em;
+  width: 42%;
+  display: inline-block;
+  border-radius: 5px;
+  background-image: url('../images/src/photo2.jpg');
+  margin: 0px 0px -7px -15px  /* pour cacher la marge en bas de la photo */
+}
+.article-mobile3 {
+  height: 15em;
+  width: 42%;
+  display: inline-block;
+  border-radius: 5px;
+  background-image: url('../images/src/photo3.jpg');
+  margin: 0px 0px -7px -15px  /* pour cacher la marge en bas de la photo */
+}
+.article-mobile4 {
+  height: 15em;
+  width: 42%;
+  display: inline-block;
+  border-radius: 5px;
+  background-image: url('../images/src/photo4.jpg');
+  margin: 0px 0px -7px -15px  /* pour cacher la marge en bas de la photo */
+}
+.content-mobile {
+  float: left;
+  display: line;
+  width: 58%;
+}
+
+.content-title-mobile {
+  padding: 2em 2em 1em;
+  text-transform: uppercase;
+}
+
+.content-title-mobile h1 {
+  line-height:1em;
+  font-weight: bold;
+  font-size: 1.7em;
+  margin-bottom: -20px;
+}
+.posts-mobile {
+  padding: 10em 2em 1em;
+  width: 720px;
+}
+
+.meta-date-mobile {
+  float: left;
+  padding: 1.8em 0.2em;
+}
+
+.button-mobile {
+  text-align: right;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.premier-mobile {
+  background: #BA49FF;
+  border: none;
+  font-style: bold;
+  color: white;
+  height: 2em;
+}
+.deuxieme-mobile {
+  background: #BA49FF;
+  border: none;
+  font-style: bold;
+  color: white;
+  height: 2em;
+}
+.bordure-mobile{
+  border-bottom: 1px solid black;
+  margin-top: 40px;
+}
+.footer-mobile {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7em;
+}
+.partie-droite-mobile nav ul li{
+  display: inline-block;
+  float: right;
+  font-weight: 0.3em;
+  margin-left: 1.4em;
+}
+.partie-droite-mobile li {
+}
+.partie-droite-mobile nav ul {
+    margin-bottom: 0em;
+}
+
+}
