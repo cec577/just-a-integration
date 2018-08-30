@@ -1,2 +1,2 @@
 # just-a-integration
-little integration in html-css
+little integration in html-css during my training
